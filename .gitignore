@@ -1,0 +1,8 @@
+bumper/config/
+bumper/certs/
+.idea/
+.vscode/
+.fleet/
+.vs/
+*.swp
+.DS_Store
