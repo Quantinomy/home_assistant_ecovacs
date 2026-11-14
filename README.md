@@ -1,6 +1,12 @@
-# Ecovacs Deebot with Home Assistant, without the Ecovacs cloud
-Control an Ecovacs cleaning bot with Home Assistant (HA) through a self-hosted [Bumper](https://github.com/bmartin5692/bumper)
-server. The bot connects to a Wi-Fi hotspot on your computer that has no internet access, so nothing reaches Ecovacs.
+# Ecovacs Deebot with Home Assistant, fully offline: no Ecovacs account, app or cloud
+Keep your cleaning bot's data, like your floor plans, at home: control an Ecovacs bot with [Home Assistant](https://www.home-assistant.io)
+(HA) through a self-hosted [Bumper](https://github.com/bmartin5692/bumper) server, and nothing ever reaches Ecovacs.
+
+- **Nothing leaves your network**: the bot connects to a Wi-Fi hotspot without internet access. DNS overrides and a
+  firewall send its requests to Bumper, even those to hard-coded IP addresses, and drop everything else.
+- **No Ecovacs account, no Ecovacs app**: every guide I found for Bumper and similar servers sets up the bot with the
+  official app and an Ecovacs account. Here a single HTTP request to the bot's setup Wi-Fi is enough.
+- **No dedicated machine**: everything runs on your normal Linux computer.
 
 Tested with a Deebot T9.
 
